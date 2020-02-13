@@ -24,7 +24,7 @@ body {
 }
 
 .title {
-    positio: absolute;
+    position: absolute;
     color: black;
     font-size: 120px;
     font-family: "a시월구일4";
@@ -33,10 +33,10 @@ body {
 }
 
 button {
-    margin-top: -80px;
-    padding: 300px 250px;
+    margin-top: 120px;
+    padding: 300% 20%;
     border-radius: 50px;
-    background-color: #e8433d;
+    background-color: #e8433d73;
     border: none;
     align: center;
 }
@@ -47,10 +47,6 @@ button {
         font-size: 100px;
     }
 
-    button {
-        margin-top: 200px;
-        padding: 300px 130px;
-    }
 }
 
 @media (min-width: 481px) and (max-width: 787px) {
@@ -61,10 +57,6 @@ button {
         font-size: 80px;
     }
 
-    button {
-        margin-top: 180px;
-        padding: 300px 100px;
-    }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -75,10 +67,6 @@ button {
         font-size: 40px;
     }
 
-    button {
-        margin-top: 120px;
-        padding: 300px 30px;
-    }
 }
 
 @media (min-width: 0px) and (max-width: 319px) {
@@ -86,11 +74,7 @@ button {
     /*mobile version*/
     .title {
         position: absolute;
-        font-size: 30px;
+        font-size: 20px;
     }
 
-    button {
-        margin-top: 100px;
-        padding: 700px 10px;
-    }
 }
