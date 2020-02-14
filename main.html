@@ -1,5 +1,3 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 
@@ -10,6 +8,17 @@
     <link href="mainStyle.css" rel="stylesheet" type="text/css">
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script>
+        function open_chatroom() {
+            var windowWidth = $(window).width();
+            if (windowWidth < 1130 && windowHeight < 1000) {
+                //창 가로 크기가 500 미만일 경우
+                var br1 = $("#p1");
+                br1.html("<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>");
+            } else {
+                //창 가로 크기가 500보다 클 경우
+            }
+        }
+
         $(function () {
             $("#bt1").mouseover(function () { $("#p1").slideUp("slow"); });
             $("#bt1").mouseout(function () { $("#p1").slideDown("slow"); });
@@ -21,11 +30,11 @@
     </script>
 </head>
 
-<body style="overflow:hidden;">
+<body style="overflow:hidden;" onload="">
     <p class="title" id="title">What's your color</p>
     <center>
         <!--<div class='member'>-->
-        <div id="p1"><br /></div>
+        <div id="p1"><br /><br /><br /><br /><br /><br /><br /><br><br /><br /></div>
         <span id="bt1">
             <button id="btn1" class="button1 a" onclick="location.href='member.jsp'">회원 </button></span>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
